@@ -1,0 +1,25 @@
+{
+  "name": "kemono-cotrans",
+  "module": "index.ts",
+  "type": "module",
+  "description": "",
+  "version": "",
+  "author": {
+    "name": "EnergoStalin"
+  },
+  "scripts": {
+    "build": "bun run build/build.ts",
+    "build:dev": "DEVELOPMENT=true bun run build/build.ts",
+    "serve": "bun run build/serve.ts"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.2",
+    "@types/tampermonkey": "^4.20.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@cotrans/client": "^0.0.2"
+  }
+}

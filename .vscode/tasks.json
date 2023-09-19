@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "bun run build.ts"
+        },
+        {
+            "type": "npm",
+            "script": "build:dev",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build:dev",
+            "detail": "DEVELOPMENT=true bun run build.ts"
+        },
+        {
+            "type": "npm",
+            "script": "serve",
+            "problemMatcher": [],
+            "label": "npm: serve",
+            "detail": "bun run serve.ts",
+            "dependsOn": [
+                "npm: build:dev"
+            ]
+        }
+    ]
+}
